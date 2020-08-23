@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"web_shell_jsp_Attack!"; content:"processbuilder"; nocase; content:"start("; nocase; sid: 2135555;)
