@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"RFI_Attack!"; content:"GET /"; nocase; pcre:"/(=http|=https)/i"; sid:67;)
