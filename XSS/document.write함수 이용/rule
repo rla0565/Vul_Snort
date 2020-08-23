@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"XSS_document.write_ATTACK!"; content:"script"; nocase; content:"document.write("; nocase; sid:1234;)
