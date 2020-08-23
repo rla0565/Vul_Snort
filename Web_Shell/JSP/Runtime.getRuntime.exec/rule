@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"web_shell_jsp_Attack!"; content:"|0d 0a 0d 0a|<%"; nocase; content:"Runtime.getRuntime"; nocase; sid: 213124;)
