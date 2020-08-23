@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"XSS_alert_ATTACK!!"; cotent:"script"; nocase; content:"alert("; nocase; sid:555555;)
