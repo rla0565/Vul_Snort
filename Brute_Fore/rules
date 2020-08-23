@@ -1,0 +1,1 @@
+ alert tcp any any -> any any (msg:"BRUTE_FORCE_ATTACK";content:"username"; nocase; content:"password";nocase;threshold:type both,track by_src,count 10,seconds 20;sid:11111;)
