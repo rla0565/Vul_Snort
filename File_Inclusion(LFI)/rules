@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"LFI_Attack!"; content:"GET /"; nocase; content:"=/etc"; nocase; sid:3434;)
